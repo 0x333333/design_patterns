@@ -8,16 +8,16 @@ class Mocha extends CondimentDecorator
 
 	public function __construct($beverage)
 	{
-		$this->beverage = $beverage;
+		parent::__construct($beverage);
 	}
 
 	public function getDescription()
 	{
-		return $this->beverage->getDescription() + ", Mocha";
+		return parent::getDescription().", Mocha";
 	}
 
 	public function cost()
 	{
-		return 0.20 + $this->beverage->cost();
+		return 0.20 + parent::cost();
 	}
 }

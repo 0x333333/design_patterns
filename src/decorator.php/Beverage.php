@@ -2,17 +2,11 @@
 
 abstract class beverage
 {
-	protected $description;
+	// protected $description;
 
-	abstract public function __construct();
+	public function __construct(){}
 
-	public function getDescription()
-	{
-		return $this->description;
-	}
-
-	public function cost()
-	{
-		return 0;
-	}
+	abstract public function getDescription();
+	
+	abstract public function cost();
 }

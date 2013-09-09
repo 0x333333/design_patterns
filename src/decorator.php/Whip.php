@@ -8,16 +8,16 @@ class Whip extends CondimentDecorator
 
 	public function __construct($beverage)
 	{
-		$this->beverage = $beverage;
+		parent::__construct($beverage);
 	}
 
 	public function getDescription()
 	{
-		return $this->beverage->getDescription() + ", Whip";
+		return parent::getDescription().", Whip";
 	}
 
 	public function cost()
 	{
-		return 0.40 + $this->beverage->cost();
+		return 0.50 + parent::cost();
 	}
 }

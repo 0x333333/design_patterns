@@ -4,8 +4,8 @@ include_once 'Beverage.php';
 
 class HouseBlend extends Beverage {
 
-	public function __construct() {
-		parent::$this->description = "HouseBlend";
+	public function getDescription() {
+		return 'HouseBlend';
 	}
 	
 	public function cost() {

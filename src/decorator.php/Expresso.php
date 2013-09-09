@@ -4,8 +4,8 @@ include_once 'Beverage.php';
 
 class Expresso extends Beverage {
 
-	public function __construct() {
-		$description = "Expresso";
+	public function getDescription() {
+		return "Expresso";
 	}
 	
 	public function cost() {
